@@ -14,19 +14,11 @@ public class Exercicio09 {
 
         for (int i = 0; i < 5; i++) {
 
-            if (A[i] % 2 == 0) {
-                C[i] = A[i];
-            } else if (B[i] % 2 == 1) {
-                C[i] = B[i];
-            }
-
-        }
-
-        for (int i = 0; i < 5; i++) {
-
             if (i % 2 == 0) {
+                C[i] = A[i];
                 Prompt.imprimir("Par: " + C[i]);
             } else {
+                C[i] = B[i];
                 Prompt.imprimir("Impar: " + C[i]);
             }
         }
